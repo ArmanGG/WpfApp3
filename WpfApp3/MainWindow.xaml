@@ -1,0 +1,123 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="800">
+    <Grid x:Name="ChessBoard" Height="400" Width="400">
+        <Grid.Background >
+            <ImageBrush ImageSource="Images\Chessboard.png" Stretch="Fill" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Name="A1" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="0" Grid.Column="1" Name="A2" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="0" Grid.Column="2" Name="A3" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="0" Grid.Column="3" Name="A4" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="0" Grid.Column="4" Name="A5" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="0" Grid.Column="5" Name="A6" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="0" Grid.Column="6" Name="A7" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="0" Grid.Column="7" Name="A8" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="1" Grid.Column="0" Name="B1" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="1" Grid.Column="1" Name="B2" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="1" Grid.Column="2" Name="B3" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="1" Grid.Column="3" Name="B4" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="1" Grid.Column="4" Name="B5" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="1" Grid.Column="5" Name="B6" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="1" Grid.Column="6" Name="B7" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="1" Grid.Column="7" Name="B8" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="2" Grid.Column="0" Name="C1" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="2" Grid.Column="1" Name="C2" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="2" Grid.Column="2" Name="C3" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="2" Grid.Column="3" Name="C4" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="2" Grid.Column="4" Name="C5" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="2" Grid.Column="5" Name="C6" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="2" Grid.Column="6" Name="C7" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="2" Grid.Column="7" Name="C8" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="3" Grid.Column="0" Name="D1" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="3" Grid.Column="1" Name="D2" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="3" Grid.Column="2" Name="D3" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="3" Grid.Column="3" Name="D4" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="3" Grid.Column="4" Name="D5" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="3" Grid.Column="5" Name="D6" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="3" Grid.Column="6" Name="D7" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="3" Grid.Column="7" Name="D8" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="4" Grid.Column="0" Name="E1" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="4" Grid.Column="1" Name="E2" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="4" Grid.Column="2" Name="E3" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="4" Grid.Column="3" Name="E4" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="4" Grid.Column="4" Name="E5" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="4" Grid.Column="5" Name="E6" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="4" Grid.Column="6" Name="E7" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="4" Grid.Column="7" Name="E8" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="5" Grid.Column="0" Name="F1" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="5" Grid.Column="1" Name="F2" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="5" Grid.Column="2" Name="F3" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="5" Grid.Column="3" Name="F4" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="5" Grid.Column="4" Name="F5" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="5" Grid.Column="5" Name="F6" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="5" Grid.Column="6" Name="F7" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="5" Grid.Column="7" Name="F8" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="6" Grid.Column="0" Name="G1" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="6" Grid.Column="1" Name="G2" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="6" Grid.Column="2" Name="G3" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="6" Grid.Column="3" Name="G4" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="6" Grid.Column="4" Name="G5" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="6" Grid.Column="5" Name="G6" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="6" Grid.Column="6" Name="G7" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="6" Grid.Column="7" Name="G8" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="7" Grid.Column="0" Name="H1" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="7" Grid.Column="1" Name="H2" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="7" Grid.Column="2" Name="H3" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="7" Grid.Column="3" Name="H4" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="7" Grid.Column="4" Name="H5" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="7" Grid.Column="5" Name="H6" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="7" Grid.Column="6" Name="H7" Background="Transparent" MouseDown="Border_MouseDown"/>
+        <Border Grid.Row="7" Grid.Column="7" Name="H8" Background="Transparent" MouseDown="Border_MouseDown">
+        </Border>
+        <TextBox Name="TextCoord" TextWrapping="Wrap" Width="120" Grid.Column="7" Margin="95,-25,-165,25" TextChanged="TextBox_TextChanged"/>
+        <ComboBox Name="CoordX" Margin="184,25,-195,25" Grid.Column="7" Grid.Row="1" Grid.RowSpan="2"/>
+        <ComboBox Name="CoordY" Margin="91,25,-102,25" Grid.Column="7" Grid.Row="1" Grid.RowSpan="2"/>
+        <ComboBox Name="Color" Margin="88,0,-105,0" Grid.Column="7" Grid.Row="3"/>
+        <ComboBox Name="Figure" Margin="184,0,-196,0" Grid.Column="7" Grid.Row="3" Height="50" VerticalAlignment="Center"/>
+        <Button Content="Start" Click="Start" Grid.Column="7" Margin="88,25,-88,25" Grid.RowSpan="2" Grid.Row="4"/>
+        <Button Content="Clear" Click="Clear" Grid.Column="7" Margin="184,25,-184,25" Grid.RowSpan="2" Grid.Row="4"/>
+        <TextBlock Name="A" HorizontalAlignment="Left" Margin="-55,0,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Center" Height="50" Width="50" FontSize="25"/>
+        <TextBlock Name="B" HorizontalAlignment="Left" Margin="-55,0,0,0" TextWrapping="Wrap" Text="B" VerticalAlignment="Center" Height="50" Width="50" Grid.Row="1" FontSize="25"/>
+        <TextBlock Name="C" HorizontalAlignment="Left" Margin="-55,0,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Center" Height="50" Width="50" Grid.Row="2" FontSize="25"/>
+        <TextBlock Name="D" HorizontalAlignment="Left" Margin="-55,0,0,0" TextWrapping="Wrap" Text="D" VerticalAlignment="Center" Height="50" Width="50" Grid.Row="3" FontSize="25"/>
+        <TextBlock Name="E" HorizontalAlignment="Left" Margin="-55,0,0,0" TextWrapping="Wrap" Text="E" VerticalAlignment="Center" Height="50" Width="50" Grid.Row="4" FontSize="25"/>
+        <TextBlock Name="F" HorizontalAlignment="Left" Margin="-55,3,0,0" TextWrapping="Wrap" Text="F" VerticalAlignment="Top" Height="50" Width="50" Grid.Row="5" FontSize="25" Grid.RowSpan="2"/>
+        <TextBlock Name="G" HorizontalAlignment="Left" Margin="-55,0,0,0" TextWrapping="Wrap" Text="G" VerticalAlignment="Center" Height="50" Width="50" Grid.Row="6" FontSize="25"/>
+        <TextBlock Name="H" HorizontalAlignment="Left" Margin="-55,0,0,0" TextWrapping="Wrap" Text="H" VerticalAlignment="Center" Height="50" Width="50" Grid.Row="7" FontSize="25"/>
+        <TextBlock x:Name="A_Copy" HorizontalAlignment="Center" Margin="0,-55,0,0" TextWrapping="Wrap" Text="   1" VerticalAlignment="Top" Height="50" Width="50" FontSize="25"/>
+        <TextBlock x:Name="A_Copy1" HorizontalAlignment="Center" Margin="45,-55,0,0" TextWrapping="Wrap" Text="   2" VerticalAlignment="Top" Height="50" Width="50" FontSize="25" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="A_Copy2" HorizontalAlignment="Center" Margin="0,-55,0,0" TextWrapping="Wrap" Text="   3" VerticalAlignment="Top" Height="50" Width="50" FontSize="25" Grid.Column="2"/>
+        <TextBlock x:Name="A_Copy3" HorizontalAlignment="Center" Margin="0,-55,0,0" TextWrapping="Wrap" Text="   4" VerticalAlignment="Top" Height="50" Width="50" FontSize="25" Grid.Column="3"/>
+        <TextBlock x:Name="A_Copy4" HorizontalAlignment="Center" Margin="0,-55,0,0" TextWrapping="Wrap" Text="   5" VerticalAlignment="Top" Height="50" Width="50" FontSize="25" Grid.Column="4"/>
+        <TextBlock x:Name="A_Copy5" HorizontalAlignment="Center" Margin="0,-55,0,0" TextWrapping="Wrap" Text="   6" VerticalAlignment="Top" Height="50" Width="50" FontSize="25" Grid.Column="5"/>
+        <TextBlock x:Name="A_Copy6" HorizontalAlignment="Center" Margin="0,-55,0,0" TextWrapping="Wrap" Text="   7" VerticalAlignment="Top" Height="50" Width="50" FontSize="25" Grid.Column="6"/>
+        <TextBlock x:Name="A_Copy7" HorizontalAlignment="Center" Margin="0,-55,0,0" TextWrapping="Wrap" Text="   8" VerticalAlignment="Top" Height="50" Width="50" FontSize="25" Grid.Column="7"/>
+
+    </Grid>
+</Window>
